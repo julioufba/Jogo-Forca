@@ -9,6 +9,11 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(70px,1fr));
 gap:0.3rem;
 width: 700px;
+@media(max-width:700px){
+width: 400px;
+grid-template-columns: repeat(auto-fit, minmax(40px,0.8fr));
+
+}
 
 `
 
