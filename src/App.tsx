@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import './App.css';
 import Keyboard from './Keyboard';
 import HangmanDrawing from './hangman-drawing';
 import HangmanWord from './hangman-word';
+
+
+
+
+
 
 const HangmanParts = styled.div`
     display: flex;
