@@ -46,9 +46,7 @@ function App() {
             e.preventDefault();
             addGuessedLetters(key);
         };
-        if (!isTrue){
-            return
-        }
+       
 
         document.addEventListener("keypress", handler);
 

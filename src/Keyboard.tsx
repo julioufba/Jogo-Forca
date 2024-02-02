@@ -32,7 +32,7 @@ export default function Keyboard({activeLetters,disabled=true, inactiveLetters, 
        return (  
 
        
-        <Button onClick={()=> addGuessedLetters(letter)}isActive={isActive && isInactive} key={letter} disabled={disabled}>
+        <Button onClick={()=> addGuessedLetters(letter)}isActive={isActive && isInactive} key={letter} disabled={ disabled}>
             {letter}
         </Button>
        )})}
