@@ -46,6 +46,9 @@ function App() {
             e.preventDefault();
             addGuessedLetters(key);
         };
+        if (!isTrue){
+            return
+        }
 
         document.addEventListener("keypress", handler);
 
@@ -95,7 +98,7 @@ function App() {
                 activeLetters = {GuessedLetters}
                 inactiveLetters = {incorrectGuesses}
                 addGuessedLetters={addGuessedLetters}
-                disabled = {isLoser || isWinner}
+                disabled = {isLoser || isWinner || !isTrue}
                 />
             </div>}
         </Wrapper>

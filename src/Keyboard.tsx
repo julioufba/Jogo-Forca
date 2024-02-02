@@ -23,7 +23,7 @@ interface KeyBoardProps{
     disabled:boolean
 
 }
-export default function Keyboard({activeLetters,disabled=false, inactiveLetters, addGuessedLetters}:KeyBoardProps){
+export default function Keyboard({activeLetters,disabled=true, inactiveLetters, addGuessedLetters}:KeyBoardProps){
     return (
         <Wrapper>
        {keys.map((letter) => {
